@@ -57,8 +57,12 @@ public class BaseClass {
 	public static void ScrollPage()
 	{
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("windows.scrollBy(0,1000)", "");
-		
+		js.executeScript("windows.scrollBy(0,1000)", "");		
+	}
+	
+	public static String getCurrentURL()
+	{
+		return driver.getCurrentUrl();
 	}
 
 }
